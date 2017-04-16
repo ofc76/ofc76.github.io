@@ -30,6 +30,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<style type="text/css">#aaam {
+    display: none;
+}</style>
+
     </head>
     <body id="page-top">
         
@@ -387,7 +391,15 @@
                 
                  text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p>
+                    <p><a id="aaa" href="mailto:">feedback@startbootstrap.com</a></p>
+<script>
+  var parts = ["john<span id="aaam">RE", "MOVE</span>@ab", "c<span id="aa", "am">REMOVE</span>.com"];
+  var email = parts[0] + parts[1] + parts[2] + parts[3];
+  document.getElementById("aaa").innerHTML=email;
+
+
+
+</script>
                 </div>
             
         </div>
