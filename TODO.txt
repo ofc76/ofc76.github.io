@@ -1,0 +1,4 @@
+1. Починить disqus
+X2. Иконки (favicon)
+x3. index.XML из _soe <- зачем мне этот RSS ?
+x4. sitemap.xml <- дополнить

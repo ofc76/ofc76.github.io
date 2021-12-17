@@ -1,758 +1,175 @@
 <!DOCTYPE html>
-<html lang="ru-ru">
-    <head>
-        <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="OFC76">
-<meta name="description" content="Sound of event">
-<meta name="generator" content="Hugo 0.19" />
-<title>S.O.E.</title>
+<html lang=en-us prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="https://ofc76.github.io/favicon.ico">
-<!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="https://ofc76.github.io/css/bootstrap.min.css" type="text/css">
-<!-- Custom Fonts -->
-<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://ofc76.github.io/font-awesome/css/font-awesome.min.css" type="text/css">
-<!-- Plugin CSS -->
-<link rel="stylesheet" href="https://ofc76.github.io/css/animate.min.css" type="text/css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="https://ofc76.github.io/css/creative.css" type="text/css">
-<link rel="stylesheet" href="https://ofc76.github.io/css/modals.css" type="text/css">
+<head lang="uk">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="ofc076 projects">
+    <meta name="author" content="ofc076">
+    <meta name="keywords" content>
+    <title>ofc076</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel=canonical href=https://ofc76.github.io />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="ofc076 projects">
+    <meta property="og:title" content="ofc076">
+    <meta property="og:site_name" content="ofc076">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:url" content="https://ofc76.github.io/">
+    <meta property="og:locale" content="en-us">
+    <meta name=twitter:card content="summary">
+    <meta name=twitter:title content="ofc076">
+    <meta name=twitter:description content="ofc076 projects">
+    <meta name=twitter:domain content="https://ofc76.github.io/">
+    <link rel=stylesheet href="/static/normalize.css">
+    <link rel=stylesheet href="/static/style.css" rel="preload stylesheet" as=style>
+    <!-- https://hugo-fluency-demo.netlify.app/ -->
+</head>
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<style type="text/css">#aaam {
-    display: none;
-}</style>
-
-    </head>
-    <body id="page-top">
-        
-            <!-- NAVIGATION -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-                <a class="navbar-brand page-scroll" href="#page-top">Sound of Event</a>
-            
+<body>
+    <script>
+        const currentTheme = window.localStorage.getItem('theme')
+        if (currentTheme === "dark") 
+        { document.body.classList.toggle("theme-dark"); } 
+        else if (currentTheme == "light") 
+        { document.body.classList.toggle("theme-light"); }
+    </script>
+    <header id="header">
+        <div class="row">
+            <div class="container has-padding nav">
+                <button id="navbar-toggler" class="navbar-button" aria-hidden="true">
+                    <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'>
+                        <path d='M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z' />
+                    </svg>
+                </button>
+                <div class="navbar-brand">
+                    <a class="logo navbar-button" href="/"
+                        title="ofc76"><span>ofc76</span></a>
+                </div>
+                <nav class="navbar" role="navigation">
+                    <ul>
+<!--                         <li class="nav-bar-item"><a class="nav-link navbar-button" href="/posts/"
+                                title="posts"><span>posts</span></a></li>
+                        <li class="nav-bar-item"><a class="nav-link navbar-button" href="/tags/"
+                                title="tags"><span>tags</span></a></li>
+                        <li class="nav-bar-item"><a class="nav-link navbar-button" href="/archives/"
+                                title="archives"><span>archives</span></a></li> -->
+                        <li class="nav-bar-item"><a class="nav-link navbar-button" href="/about.html"
+                                title="about"><span>about</span></a></li>
+                    </ul>
+                </nav>
+                <div class="theme-selector">
+                    <button class="button is-text" id="theme-selector-button" title="toggle theme">
+                        <span class="label icon">
+                            <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'>
+                                <path
+                                    d='M256 32C132.29 32 32 132.29 32 256s100.29 224 224 224 224-100.29 224-224S379.71 32 256 32zM128.72 383.28A180 180 0 01256 76v360a178.82 178.82 0 01-127.28-52.72z' />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="container has-padding">
+                <div class="breadcrumb"></div>
+            </div>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                
-                    <li>
-                        <a class="page-scroll" href="#about">Автоинформатор</a>
-                    </li>
-                
-                
-                    <li>
-                        <a class="page-scroll" href="#services">Сервис</a>
-                    </li>
-                
-                
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Обзор</a>
-                    </li>
-                
-                
-                
-                    <li>
-                        <a class="page-scroll" href="#contact">Контакты</a>
-                    </li>
-                
+    </header>
+    <main id="main" class="index-page homepage" role="main">
+        <div class="container has-padding">
+            <div class="article-list">
+
+                <article class="post">
+                    <h3 class="title"><a href="/_soe/index.html"
+                            title="Автоінформатор 'Автостанція'">Автоінформатор "Автостанція"</a>
+                    </h3>
+                    <div class="content summary">
+                        <p>
+                        <p>Система звукового сповіщення дя автостанцій. 
+                            Основний функціонал: сповіщення для пасажирів про відправлення рейсів, рекламні та інформаційні оголошення за розкладом без участі персоналу автостанції.</p>
+                        </p><span class="hellip">&mldr;</span>
+                    </div><a class="readmore" href="/_soe/index.html"
+                        aria-label="Детальніше">Детальніше</a>
+                    <div class="right">
+                        <time datetime="2020-01-24T00:00:00Z" class="date">January 24, 2020
+                        </time>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <h3 class="title"><a href="/_tablo/index.html"
+                            title="Табло 'Автовокзал'">Табло "Автовокзал"</a>
+                    </h3>
+                    <div class="content summary">
+                        <p>
+                        <p>Рекамно-інформаційна система "Табло автостанції", що відображає 
+                            рекламні / інформаційні фото- та відеоматеріали, та інформацію про поточний стан продажу квитків:
+                        відправення / затримку / скасування рейсів, наявність вільних місць, вартість проїзду тощо.</p>
+                        </p>
+                        <span class="hellip">&mldr;</span>
+                    </div>
+                    <a class="readmore" href="/_tablo/index.html"
+                        aria-label="Детальніше">Детальніше</a>
+                    <div class="right">
+                        <time datetime="2020-01-01T00:00:00+0800" class="date">January 01, 2020</time>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <h3 class="title"><a href="/_boardpass/index.html"
+                            title="Система автоматичного друку посадкових талонів">Система автоматичного друку посадкових талонів</a></h3>
+                    <div class="content summary">
+                        <p>
+                        <p>Автономна система дозволяє пасажиру самостійно, без участі персоналу автостанції, 
+                            роздрукувати посадковий талон до квитка, що був придбаний пасажиром в мережі Інтернет</p>
+                        </p><span class="hellip">&mldr;</span>
+                    </div><a class="readmore" href="/_boardpass/index.html"
+                        aria-label="Детальніше">Детальніше</a>
+                    <div class="right">
+                        <time datetime="2019-12-17T00:00:00Z" class="date">December 17, 2019</time>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <ul class="pagination-container">
+                    <li class="page-item current page-number"><a class="page-link" href="/">1</a></li>
+                    <li class="page-item page-number"><a class="page-link" href="underconstract.html">2</a></li>
+                    <li class="page-item to-right"><a href="underconstract.html" class="page-link" aria-label="Next"><span
+                                aria-hidden="true">Next &#187;</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container has-padding is-flex">
+            <ul class="links">
+                <li>
+                    <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B0%D1%80%D1%82%D1%8E%D1%85-051793125" title="LinkedIn">LinkedIn</a>
+                </li>
+
+                <li>
+                    <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTjiaQsxAwu0Wt25YERvJ5g" title="YouTube">YouTube</a>
+                </li>
+
             </ul>
+            <div class="copyright">&copy; 2021 ofc76</div>
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+    </footer>
+    <script defer src="/static/base.js"></script>
+    <noscript>
+        <style type="text/css">
+            #theme-selector-button {
+                display: none
+            }
+        </style>
+    </noscript>
+</body>
 
-        
-
-        
-            <!-- HEADER -->
-<header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            
-                <h1>Автоинформатор &ldquo;Автостанция&rdquo;</h1>
-            
-            
-                <hr>
-            
-            
-                <p>В ИТ-сфере нет невозможного. Важны стоимость проекта и время реализации</p>
-            
-            
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">УЗНАТЬ БОЛЬШЕ</a>
-            
-        </div>
-    </div>
-</header>
-
-        
-
-        
-            <!-- ABOUT -->
-<section class="bg-primary" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                
-                    <h2 class="section-heading">То, чего давно не хватало!</h2>
-                
-                
-                    <hr class="light">
-                
-                
-                    <p class="text-faded">Автоматическая система звукового оповещения об отправлении рейсов. Работа в режимах &ldquo;по событию&rdquo; и &ldquo;по расписанию&rdquo;. Воспроизведение технологических и рекламных объявлений</p>
-                
-                
-                    <a href="#portfolio" class="btn btn-default btn-xl">Картинки с подтекстом и видеообзор</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-        
-
-        
- 
-        
-
-        
-            <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal1" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/electro2017.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                            Electronics
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Современные компоненты
-                                        </div>
-                                    
-                                    <div class="text-faded">
-                                        ( click me )
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal2" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/rem2017.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                            Remote access
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Удаленное управление
-                                        </div>
-                                    
-                                    <div class="text-faded">
-                                        ( click me )
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal3" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/en.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                            Energy efficiency
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Низкое энергопотребление
-                                        </div>
-                                    
-                                    <div class="text-faded">
-                                        ( click me )
-                                    </div>  
-                                    
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal4" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/stek2017.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                            Development
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Стек технологий
-                                        </div>
-                                    
-                                    <div class="text-faded">
-                                        ( click me )
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal6" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/youtube2017.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                            video
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Видеообзор
-                                        </div>
-                                    
-                                    <div class="text-faded">
-                                        ( click me )
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal5" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/ready2017.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                            usability
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Ready-to-use
-                                        </div>
-                                    
-                                     <div class="text-faded">
-                                        ( click me )
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
-        </div>
-    </div>
-</section>
-
-        
-           <!-- SERVICES -->
-<section id="services">
-    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">В рамках проекта &#34;Sound of Event&#34; мы предлагаем Вам</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-    
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary"></i>
-                    <h3></h3>
-                    
-                        <p class="text-muted">Гибкие и простые настройки системы</p>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary"></i>
-                    <h3></h3>
-                    
-                        <p class="text-muted">Расширение функционала</p>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3></h3>
-                    
-                        <p class="text-muted">Web-интерфейс</p>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary"></i>
-                    <h3></h3>
-                    
-                        <p class="text-muted">Индивидуальный подход к каждому клиенту</p>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-        
-
-        
-            <!-- ASIDE -->
-<aside class="bg-dark">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2>Обсуждение</h2>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'ofc76-disqus-com';
-    var disqus_identifier = 'https:\/\/ofc76.github.io\/';
-    var disqus_title = 'S.O.E.';
-    var disqus_url = 'https:\/\/ofc76.github.io\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-    </div>
-</aside>
-
-        
-
-        
-            <!-- CONTACT -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                
-                    <h2 class="section-heading">Свяжитесь с нами!</h2>
-                
-                
-                    <hr class="primary">
-                
-                
-                    <p>Готовы идти в ногу со временем? Отлично! Напишите нам и мы свяжемся с Вами в ближайшее время!</p>
-                
-            </div>
-            
-            
-                <div class="
-                
-                    col-lg-8 col-lg-offset-2
-                
-                 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a id="aaa" href="mailto:">feedback@startbootstrap.com</a></p>
-<script>
-  var parts = ["soe73000<span id=\"aaam\">RE", "MOVE</span>@gm", "ail<span id=\"aa", "am\">REMOVE</span>.com"];
-  var email = parts[0] + parts[1] + parts[2] + parts[3];
-  document.getElementById("aaa").innerHTML=email;
-
-
-
-</script>
-                </div>
-            
-        </div>
-    </div>
-</section>
-
-        
-
-        
-            <!-- Portfolio Modals -->
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        
-                            <h2>Современные компоненты</h2>
-                        
-                        
-                            <hr class="star-primary">
-                        
-                        <img src="img/portfolio/electro2017.jpg" class="img-responsive img-centered" alt="">
-                        
-                            <p>64-битный процессор Cortex-A53 с 4 ядрами (частота 1.2GHz), 1Gb RAM, до 32Gb flash-памяти.</p>
-                        
-                        
-                            <ul class="list-inline item-details">
-                                
-                                    <li>Client: 
-                                        <strong><a href="#">ofc76</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Date: 
-                                        <strong><a href="#">2017-02-05</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Category: 
-                                        <strong><a href="#">Electronics</a></strong>
-                                    </li>
-                                
-                            </ul>
-                        
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        
-                            <h2>Удаленное управление</h2>
-                        
-                        
-                            <hr class="star-primary">
-                        
-                        <img src="img/portfolio/rem2017.jpg" class="img-responsive img-centered" alt="">
-                        
-                            <p>Удаленное управление и настройка из любого места через безопасные VPN-соединения.</p>
-                        
-                        
-                            <ul class="list-inline item-details">
-                                
-                                    <li>Client: 
-                                        <strong><a href="#">ofc76</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Date: 
-                                        <strong><a href="#">2014-07-06</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Category: 
-                                        <strong><a href="#">Remote access</a></strong>
-                                    </li>
-                                
-                            </ul>
-                        
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        
-                            <h2>Низкое энергопотребление</h2>
-                        
-                        
-                            <hr class="star-primary">
-                        
-                        <img src="img/portfolio/en.jpg" class="img-responsive img-centered" alt="">
-                        
-                            <p>Всего 4 Вт/час. Ни один ПК или ноутбук не имеет такого низкого потребления.</p>
-                        
-                        
-                            <ul class="list-inline item-details">
-                                
-                                    <li>Client: 
-                                        <strong><a href="#">ofc76</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Date: 
-                                        <strong><a href="#">2017-03-07</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Category: 
-                                        <strong><a href="#">Energy efficiency</a></strong>
-                                    </li>
-                                
-                            </ul>
-                        
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        
-                            <h2>Стек технологий</h2>
-                        
-                        
-                            <hr class="star-primary">
-                        
-                        <img src="img/portfolio/stek2017.jpg" class="img-responsive img-centered" alt="">
-                        
-                            <p>При разработке программного кода и интерфейса использовались современные технологии - Python, HTML5, CSS, JavaScript.</p>
-                        
-                        
-                            <ul class="list-inline item-details">
-                                
-                                    <li>Client: 
-                                        <strong><a href="#">Start Bootstrap</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Date: 
-                                        <strong><a href="#">2014-07-09</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Category: 
-                                        <strong><a href="#">Development</a></strong>
-                                    </li>
-                                
-                            </ul>
-                        
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/6SN9lq7q-fA?autoplay=0" 
-  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
-</div>
-
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        
-                            <h2>Ready-to-use</h2>
-                        
-                        
-                            <hr class="star-primary">
-                        
-                        <img src="img/portfolio/ready2017.jpg" class="img-responsive img-centered" alt="">
-                        
-                            <p>Минимальный набор инструментов, достаточный для начала работы, доступен к загрузке непосредственно из устройства. Достаточно лишь подключить питание.</p>
-                        
-                        
-                            <ul class="list-inline item-details">
-                                
-                                    <li>Client: 
-                                        <strong><a href="#">ofc76</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Date: 
-                                        <strong><a href="#">2017-04-14</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Category: 
-                                        <strong><a href="#">usability</a></strong>
-                                    </li>
-                                
-                            </ul>
-                        
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-        
-
-        <!-- jQuery -->
-<script src="https://ofc76.github.io/js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="https://ofc76.github.io/js/bootstrap.min.js"></script>
-<!-- Plugin JavaScript -->
-<script src="https://ofc76.github.io/js/jquery.easing.min.js"></script>
-<script src="https://ofc76.github.io/js/jquery.fittext.js"></script>
-<script src="https://ofc76.github.io/js/wow.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="https://ofc76.github.io/js/creative.js"></script>
-
-
-        
-    </body>
 </html>
