@@ -2,12 +2,43 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ofc76.github.io/y/</loc>
-  </url>
-  
-  <url>
     <loc>https://ofc76.github.io/</loc>
-    <priority>0</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="uk"
+               href="https://ofc76.github.io/"/>
+    <lastmod>2021-12-14</lastmod>
   </url>
-  
+  <url>
+    <loc>https://ofc76.github.io/_soe/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://ofc76.github.io/_soe/index.html"/>
+    <lastmod>2021-12-14</lastmod>
+  </url>
+  <url>
+    <loc>https://ofc76.github.io/_tablo/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://ofc76.github.io/_tablo/index.html"/>
+    <lastmod>2021-12-14</lastmod>
+  </url>
+  <url>
+    <loc>https://ofc76.github.io/_boardpass/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://ofc76.github.io/_boardpass/index.html"/>
+    <lastmod>2021-12-14</lastmod>
+  </url> 
+  <url>
+    <loc>https://ofc76.github.io/about.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="uk"
+               href="https://ofc76.github.io/about.html"/>
+    <lastmod>2021-12-14</lastmod>
+  </url> 
 </urlset>
