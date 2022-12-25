@@ -37,11 +37,19 @@
     <lastmod>2021-12-14</lastmod>
   </url> 
   <url>
+    <loc>https://ofc76.github.io/_tcmb581/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://ofc76.github.io/_tcmb581/index.html"/>
+    <lastmod>2022-12-24</lastmod>
+  </url> 
+  <url>
     <loc>https://ofc76.github.io/about.html</loc>
     <xhtml:link
                rel="alternate"
                hreflang="uk"
                href="https://ofc76.github.io/about.html"/>
-    <lastmod>2021-12-14</lastmod>
+    <lastmod>2022-12-24</lastmod>
   </url> 
 </urlset>
