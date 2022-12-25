@@ -10,7 +10,14 @@
                rel="alternate"
                hreflang="uk"
                href="https://ofc76.github.io/"/>
-    <lastmod>2021-12-14</lastmod>
+    <lastmod>2022-12-24</lastmod>
+  </url>
+  <loc>https://ofc76.github.io/page2.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="uk"
+               href="https://ofc76.github.io/page2.html"/>
+    <lastmod>2022-12-24</lastmod>
   </url>
   <url>
     <loc>https://ofc76.github.io/_soe/index.html</loc>
