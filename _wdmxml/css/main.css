@@ -1,0 +1,12 @@
+.carousel-dark .carousel-control-prev-icon, .carousel-dark .carousel-control-next-icon {
+  background-color: red;
+  filter: invert(0) grayscale(0);
+}
+
+.carousel-inner h5 {
+  color: red;
+}
+
+.carousel-inner p {
+  color: red;
+}
